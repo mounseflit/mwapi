@@ -2,6 +2,11 @@ const puppeteer = require("puppeteer");
 require("dotenv").config();
 
 const scrapeLogic = async (res) => {
+  let mail = "R130001518@taalim.ma";
+let password = "130569Akram";
+let year = "2022";
+let round = "2";
+
   const browser = await puppeteer.launch({
     args: [
       "--disable-setuid-sandbox",
