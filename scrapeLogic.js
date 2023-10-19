@@ -1,8 +1,14 @@
 const puppeteer = require("puppeteer");
 require("dotenv").config();
 
+// const scrapeLogic = async (url, mail, password, year, round) => {
+
+
+
 const scrapeLogic = async (res) => {
-  let mail = "R130001518@taalim.ma";
+
+let url = "https://waliye.men.gov.ma/moutamadris/Account"
+let mail = "R130001518@taalim.ma";
 let password = "130569Akram";
 let year = "2022";
 let round = "2";
