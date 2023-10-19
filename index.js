@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 4000;
 
 app.get("/scrape", (req, res) => {
   try {
-   const { mail, password } = req.body;
+   const { mail, password } = req.query;
         let url = "https://waliye.men.gov.ma/moutamadris/Account";
         let year = "2022";
         let round = "2";
