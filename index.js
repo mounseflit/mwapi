@@ -13,7 +13,6 @@ app.get("/scrape", (req, res) => {
         const message = scrapeLogic(url, mail, password, year, round);
         res.json({ message });
   } catch {
-    console.error("Error in scraping", error);
     res.status(500).json({ error: "Failed to scrape data" });
   }
 });
