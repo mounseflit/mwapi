@@ -10,7 +10,8 @@ app.get("/scrape", (req, res) => {
         let url = "https://waliye.men.gov.ma/moutamadris/Account";
         let year = "2022";
         let round = "2";
-        scrapeLogic(url, mail, password, year, round);
+        const message = scrapeLogic(url, mail, password, year, round);
+        res.json({ message });
   } catch {
     res.status(500).json({ error: "Failed to scrape data" });
   }
