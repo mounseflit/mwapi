@@ -11,7 +11,6 @@ app.get("/scrape", (req, res) => {
         let year = "2022";
         let round = "2";
         scrapeLogic(url, mail, password, year, round);
-        scrapeLogic(res);
   } catch {
     res.status(500).json({ error: "Failed to scrape data" });
   }
